@@ -1,0 +1,25 @@
+{
+  "name": "coinone-g",
+  "version": "0.0.3",
+  "description": "coinone bot repo",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xhad/coinone-g.git"
+  },
+  "keywords": [
+    "Coinone.com"
+  ],
+  "author": "Chad Lynch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xhad/coinone-g/issues"
+  },
+  "homepage": "https://github.com/xhad/coinone-g#readme"
+}
