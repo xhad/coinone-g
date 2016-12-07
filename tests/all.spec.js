@@ -11,9 +11,12 @@ const CoinOne = new index(config.token, config.secret, config.url);
 function delay() {
   return setTimeout(function() {}, 2000)
 }
+
 function public(err, data, spec, done) {
-  if (err) return err;
-  else {
+  if (err) {
+    console.log(err);
+    done();
+  } else {
     let d = JSON.parse(data);
     assert.equal(d.result, spec);
     done();
@@ -121,20 +124,6 @@ describe('Order Endpoints', function() {
           })
         }
       })
-
     })
     console.log('\tChad Lynch - clynch33@gmail.com\r')
-
-
-  //   it('/filledOrders', (done) => {
-  //     CoinOne.filledOrders(null, (err, data) => {
-  //       test(err, data, 'success', done)
-  //     })
-  //   })
-  //   it('/unfilledOrders', (done) => {
-  //     CoinOne.unfilledOrders(null, (err, data) => {
-  //       test(err, data, 'success', done)
-  //     })
-  //   })
-
 })
