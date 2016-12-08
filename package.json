@@ -1,6 +1,6 @@
 {
   "name": "coinone-g",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "coinone bot repo",
   "main": "index.js",
   "directories": {
