@@ -8,10 +8,6 @@ const config = require('../config');
 const CoinOne = new index(config.token, config.secret, config.url);
 
 
-function delay() {
-  return setTimeout(function() {}, 2000)
-}
-
 function public(err, data, spec, done) {
   if (err) {
     console.log(err);
@@ -109,7 +105,6 @@ describe('Order Endpoints', function() {
         CoinOne.cancel(params, (err, data) => {
           if (err) throw err;
           else {
-              delay()
               assert.equal(data.result, 'success');
           }
           done();

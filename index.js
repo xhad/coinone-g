@@ -1,8 +1,10 @@
 // Chad Lynch - Seoul, South Korea
 
 const _Request = require('./lib/_request');
+const _ = require('lodash');
 
-const CoinOne = function(token, secret) {
+var CoinOne = function(token, secret) {
+  _.bindAll(this);
   this._request = new _Request(token, secret);
   this.v = '/v2';
 }
